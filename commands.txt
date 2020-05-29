@@ -1,0 +1,29 @@
+CELERY
+
+how to run local celery in linux
+pip install celery
+
+running celery worker from your project.
+celery -A (projectname) worker -l info
+
+
+monitoring celery 
+pip install flower
+
+running celery and flower form your project 
+celery -A (projectname) flower
+Open http://localhost:5555/
+
+RABBITMQ 
+
+how to run local rabbitmq in linux using docker.
+
+install docker.
+
+copy and paste the link below to fetch rabbitmq from docker.
+docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+
+running rabbitmq server
+rabbitmq-server start
+
+
